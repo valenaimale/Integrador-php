@@ -5,15 +5,15 @@
     <title>Inicio de Sesión - ProgresoFit</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/inicio-sesion.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/formularios.css">
 </head>
 
 <body>
     <?php require 'parts/header.view.php'; ?>
     <main>
         <h2>Iniciar sesión</h2>
-        <form action="inicio-sesion.PHP" method="post">
+        <form action="/inicio-sesion" method="post">
             <fieldset>
                 <legend>Datos personales:</legend>
                 <label for="email">Email</label>

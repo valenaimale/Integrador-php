@@ -28,19 +28,26 @@
         <form>
         <fieldset>
             <legend>Datos personales</legend>
-            <input type="text" placeholder="Nombre">
-            <input type="text" placeholder="Apellido">
-            <input type="text" placeholder="Documento">
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="text" name="apellido" placeholder="Apellido">
+            <input type="text" name="documento" placeholder="Documento">
         </fieldset>
-
         <fieldset>
             <legend>Facturacion</legend>
             <input type="text" name="numero-tarjeta" placeholder="Numero tarjeta">
             <input type="text" name="nombre-titular" placeholder="Nombre titular">
-            
+            <input type="text" name="cvv" placeholder="123">
+            <input type="date" name="fecha_ven">
         </fieldset>
+        <button type="submit">Confirmar pago</button>
         </form>
-
+        <aside><!--puede ir el aside aca ya que el estandar lo define como contenido relacionado indirectamente
+            con el contenido principal de la pagina (que es el formulario de pago). En este caso los detalles del 
+            plan son complementarios al formulario de pago-->
+            <h2>Detalles del plan</h2>
+            <p>Plan: ...</p>
+            <p>Precio: ...</p>
+        </aside>
     </main>
     <footer>
             <section aria-label="Redes sociales">
@@ -54,7 +61,6 @@
                             rel="noopener noreferrer">Facebook</a></li>
                 </ul>
             </section>
-
             <nav aria-label="Enlaces del sitio">
                 <h2>Paw Print</h2>
                 <ul>
@@ -63,7 +69,6 @@
                     <li><a href="help.html">Ayuda</a></li>
                 </ul>
             </nav>
-
             <section>
                 <h2>Atención al cliente</h2>
                 <address>
@@ -72,7 +77,6 @@
                     Calle Falsa 123
                 </address>
             </section>
-
             <section aria-label="Información legal">
                 <img src="img/logo.png" alt="Data fiscal">
                 <p><small>© 2026 ProgresoFit. Todos los derechos reservados.</small></p>

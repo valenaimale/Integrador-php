@@ -1,0 +1,126 @@
+/* ===================================
+   ProgresoFit — rutinas.css
+   =================================== */
+
+.seccion-rutinas,
+.seccion-especial {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ── Grid de tarjetas de rutinas ────────────────────── */
+
+.grid-rutinas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-rutina {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: var(--blanco);
+  border-radius: var(--radio);
+  padding: 28px;
+  box-shadow: var(--sombra-sm);
+  border: 1px solid var(--crema-dark);
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+}
+
+.card-rutina:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--sombra);
+  border-color: var(--rojo);
+}
+
+.card-rutina h3 {
+  font-family: var(--font-titulo);
+  font-size: 1.6rem;
+  color: var(--negro);
+  margin-bottom: 16px;
+  letter-spacing: .5px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: .88rem;
+  color: var(--gris);
+}
+
+.card-autor {
+  font-weight: 600;
+  color: var(--negro);
+}
+
+.card-fechas {
+  font-size: .8rem;
+  color: var(--crema-dark);
+  background: var(--negro);
+  padding: 4px 8px;
+  border-radius: var(--radio-sm);
+  width: fit-content;
+}
+
+.card-objetivo {
+  font-weight: 500;
+  color: var(--rojo);
+  margin-top: 4px;
+}
+
+/* ── Grid de programas especiales ────────────────────── */
+
+.grid-programas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-programa {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: var(--crema);
+  border-radius: var(--radio);
+  padding: 32px;
+  border: 1px solid var(--crema-dark);
+  transition: background .2s, border-color .2s, transform .2s;
+}
+
+.card-programa:hover {
+  background: var(--blanco);
+  border-color: var(--rojo);
+  transform: translateY(-2px);
+}
+
+.card-programa h3 {
+  font-family: var(--font-titulo);
+  font-size: 1.8rem;
+  color: var(--negro);
+  margin-bottom: 12px;
+  letter-spacing: .5px;
+}
+
+.card-programa p {
+  font-size: .95rem;
+  color: var(--gris);
+  line-height: 1.4;
+}
+
+/* ── Responsive ────────────────────── */
+
+@media (max-width: 640px) {
+  .grid-programas {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
