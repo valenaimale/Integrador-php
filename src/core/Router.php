@@ -59,9 +59,12 @@ class Router {
             $this->logger->error('Status Code:500 - Internal Server Error', ["ERROR"=>$e]);
         }
     }
+
+    //cambiarlas
     //cargo las rutas (siempre van a estar hardcodeadas)
     public function cargar_rutas(){
         $this->register('GET@/', 'IndexController@index');
+        
         $this->register('GET@/catalogo', 'CatalogoController@listar');
 
         // Carrito

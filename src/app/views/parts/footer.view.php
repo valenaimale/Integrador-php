@@ -12,7 +12,7 @@
             </section>
 
             <nav aria-label="Enlaces del sitio">
-                <h2>Paw Print</h2>
+                <h2>ProgresoFit</h2>
                 <ul>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
@@ -24,13 +24,13 @@
                 <h2>Atención al cliente</h2>
                 <address>
                     +54 9 11 5555-5555<br>
-                    <a href="mailto:atencion@pawprint.com">atencion@pawprint.com</a><br>
+                    <a href="mailto:atencion@progresofit.com">atencion@progresofit.com</a><br>
                     Calle Falsa 123
                 </address>
             </section>
 
             <section aria-label="Información legal">
-                <img src="img/logo.png" alt="Data fiscal">
+                <img src="assets/img/logo.png" alt="Data fiscal">
                 <p><small>© 2026 ProgresoFit. Todos los derechos reservados.</small></p>
             </section>
     </footer>
