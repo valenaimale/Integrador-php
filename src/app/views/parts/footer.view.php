@@ -14,9 +14,9 @@
             <nav aria-label="Enlaces del sitio">
                 <h2>ProgresoFit</h2>
                 <ul>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="help.html">Ayuda</a></li>
+                    <li><a href="nosotros">Nosotros</a></li>
+                    <li><a href="contacto">Contacto</a></li>
+                    <li><a href="help">Ayuda</a></li>
                 </ul>
             </nav>
 

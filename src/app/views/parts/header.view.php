@@ -1,6 +1,6 @@
 <header>
     <img src="Logo.JPG" alt="Logo ProgresoFit">
-    <h1>ProgresoFit</h1>    
+    <h1><a href="/">progresoFit</a></h1>    
     <nav>
         <ul>
             <li><a href="/">Inicio</a></li>
@@ -11,7 +11,7 @@
 
         <div class="nav-acciones">
             <a href="/crearCuenta">Registro</a>
-            <a href="/user">perfil</a>
+            <a href="/inicio-sesion">iniciar sesion</a>
         </div>
     </nav>
 </header>

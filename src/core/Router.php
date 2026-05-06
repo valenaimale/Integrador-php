@@ -64,31 +64,44 @@ class Router {
     //cargo las rutas (siempre van a estar hardcodeadas)
     public function cargar_rutas(){
         $this->register('GET@/', 'IndexController@index');
-        
-        $this->register('GET@/catalogo', 'CatalogoController@listar');
+        $this->register('GET@/home-sin-login', 'HomesinloggedController@index');
 
-        // Carrito
-        $this->register('GET@/carrito', 'CarritoController@ver');
-        $this->register('POST@/carrito/agregar', 'CarritoController@agregar');
-        $this->register('POST@/carrito/eliminar', 'CarritoController@eliminar');
+        // Catálogo y Rutinas
+        $this->register('GET@/catalogo', 'CatalogoController@listar');
+        $this->register('GET@/rutinas', 'RutinasController@listar');
+        $this->register('GET@/rutina1', 'RutinaIndController@mostrar');
+        $this->register('GET@/rutina2', 'RutinaIndController@mostrar');
+        $this->register('GET@/rutina3', 'RutinaIndController@mostrar');
+        $this->register('GET@/rutina4', 'RutinaIndController@mostrar');
+
+        // Ejercicio
+        $this->register('GET@/ejercicio', 'EjercicioController@mostrar');
+
 
         // Crear cuenta
         $this->register('GET@/crearCuenta', 'CrearCuentaController@crearCuenta');
         $this->register('POST@/crearCuenta', 'CrearCuentaController@crearCuentaProcess');
+        $this->register('GET@/crearCuentaCreada', 'CrearCuentaController@cuentaCreada');
+        $this->register('GET@/crearcuenta-gym', 'CrearcuentaGymController@crear');
 
         // Inicio de sesión
         $this->register('GET@/inicio-sesion', 'InicioSesionController@index');
         $this->register('POST@/inicio-sesion', 'InicioSesionController@process');
         $this->register('GET@/cerrar-sesion', 'InicioSesionController@logout');
 
+        // Perfiles
+        $this->register('GET@/perfil-gimnasio', 'PerfilGimnasioController@mostrar');
+        $this->register('GET@/perfil-user', 'PerfilUserController@mostrar');
+        $this->register('GET@/perfil-entrenador', 'PerfilEntrenadorController@mostrar');
+
         // Formulario de compra e Historial
         $this->register('GET@/formulario', 'FormularioController@index');
         $this->register('POST@/formulario', 'FormularioController@process');
         $this->register('GET@/mis-compras', 'FormularioController@historial');
 
-        // Libro 
-        $this->register('GET@/libro', 'LibroController@mostrar_lib');
-        $this->register('POST@/libro', 'LibroController@compra_lib');
+        // Suscripción
+        $this->register('GET@/pagos-suscripcion', 'PagosuscripcionController@mostrar');
+
 
         // Nosotros
         $this->register('GET@/nosotros', 'NosotrosController@mostrar_nosotros');

@@ -2,102 +2,82 @@
 <html lang="es">
 
 <head>
-    <title>rutinas</title>
+    <title>Rutinas</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/rutinas.css">
 </head>
+
 <body>
     <?php require 'parts/header.view.php'; ?>
+    
     <main>
-        <h2>Elige tu programa segun tu objetivo</h2>
-        <ul>
-            <li>
-                <a href="/rutina1">
-                    <article>
-                        <h3>Rutina #1</h3>
-                        <p>Entrenador</p>
-                        <p>fecha inicio y final</p>
-                        <p>objetivo</p>
-                    </article>
-                </a>
-            </li>
-            <li>
-                <a href="/rutina2">
-                    <article>
-                        <h3>Rutina #2</h3>
-                        <p>Entrenador</p>
-                        <p>fecha inicio y final</p>
-                        <p>objetivo</p>
-                    </article>
-                </a>
-            </li>
-            <li>
-                <a href="/rutina3">
-                    <article>
-                        <h3>Rutina #3</h3>
-                        <p>Entrenador</p>
-                        <p>fecha inicio y final</p>
-                        <p>objetivo</p>
-                    </article>
-                </a>
-            </li>
-        </ul>
-        <h2>Programas especiales de 28 dias</h2>
-        <ul>
-            <li>
-                <a href="/autocuidado">
-                   <article>
-                        <h3>Autocuidado</h3>
-                        <p>Las mejores rutinas para el cuidado personal</p>
-                   </article> 
-                </a>
-            </li>
-            <li>
-                <a href="/principiante">
-                   <article>
-                        <h3>Principiante</h3>
-                        <p>Tenes que ver esto si estas comenzando a entrenarte</p>
-                   </article> 
-                </a>
-            </li>
-        </ul>
+        <section class="seccion-rutinas">
+            <h2>Elige tu programa según tu objetivo</h2>
+            <ul class="grid-rutinas">
+                <li>
+                    <a href="/rutina1" class="card-rutina">
+                        <article>
+                            <h3>Rutina #1</h3>
+                            <div class="card-info">
+                                <span class="card-autor">Entrenador</span>
+                                <time datetime="2026-05-01/2026-06-01" class="card-fechas">01 May - 01 Jun</time>
+                                <span class="card-objetivo">Objetivo: Hipertrofia</span>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+                <li>
+                    <a href="/rutina2" class="card-rutina">
+                        <article>
+                            <h3>Rutina #2</h3>
+                            <div class="card-info">
+                                <span class="card-autor">Entrenador</span>
+                                <time datetime="2026-05-15/2026-06-15" class="card-fechas">15 May - 15 Jun</time>
+                                <span class="card-objetivo">Objetivo: Resistencia</span>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+                <li>
+                    <a href="/rutina3" class="card-rutina">
+                        <article>
+                            <h3>Rutina #3</h3>
+                            <div class="card-info">
+                                <span class="card-autor">Entrenador</span>
+                                <time datetime="2026-06-01/2026-07-01" class="card-fechas">01 Jun - 01 Jul</time>
+                                <span class="card-objetivo">Objetivo: Fuerza</span>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="seccion-especial">
+            <h2>Programas especiales de 28 días</h2>
+            <ul class="grid-programas">
+                <li>
+                    <a href="/autocuidado" class="card-programa">
+                        <article>
+                            <h3>Autocuidado</h3>
+                            <p>Las mejores rutinas para el cuidado personal</p>
+                        </article> 
+                    </a>
+                </li>
+                <li>
+                    <a href="/principiante" class="card-programa">
+                        <article>
+                            <h3>Principiante</h3>
+                            <p>Tenés que ver esto si estás comenzando a entrenarte</p>
+                        </article> 
+                    </a>
+                </li>
+            </ul>
+        </section>
     </main>
-    <footer>
-            <section aria-label="Redes sociales">
-                <h2>Seguinos</h2>
-                <ul>
-                    <li><a href="https://www.instagram.com" target="_blank"
-                            rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="https://www.twitter.com" target="_blank"
-                            rel="noopener noreferrer">Twitter</a></li>
-                    <li><a href="https://www.facebook.com" target="_blank"
-                            rel="noopener noreferrer">Facebook</a></li>
-                </ul>
-            </section>
-
-            <nav aria-label="Enlaces del sitio">
-                <h2>Paw Print</h2>
-                <ul>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="help.html">Ayuda</a></li>
-                </ul>
-            </nav>
-
-            <section>
-                <h2>Atención al cliente</h2>
-                <address>
-                    +54 9 11 5555-5555<br>
-                    <a href="mailto:atencion@pawprint.com">atencion@pawprint.com</a><br>
-                    Calle Falsa 123
-                </address>
-            </section>
-
-            <section aria-label="Información legal">
-                <img src="img/logo.png" alt="Data fiscal">
-                <p><small>© 2026 ProgresoFit. Todos los derechos reservados.</small></p>
-            </section>
-    </footer>
-
+    <?php require 'parts/footer.view.php'; ?>
 </body>
+
+</html>

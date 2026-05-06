@@ -1,0 +1,193 @@
+/* ── CONTENEDOR GENERAL ───────────── */
+.grid-entrenamientos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* ── CARD POR DÍA ─────────────────── */
+.card-entrenamiento {
+  background: var(--blanco);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra-sm);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border-left: 5px solid var(--rojo);
+  transition: all .2s ease;
+}
+
+.card-entrenamiento:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--sombra);
+}
+
+/* ── HEADER DEL DÍA ───────────────── */
+.card-header h3 {
+  font-family: var(--font-titulo);
+  font-size: 1.3rem;
+  letter-spacing: .5px;
+  color: var(--negro);
+}
+
+/* ── BADGES (duración, grupo, etc) ─ */
+.card-meta-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.card-meta-badges span {
+  font-size: .7rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* colores */
+.badge-duracion {
+  background: var(--crema-dark);
+}
+
+.badge-ejercicios {
+  background: var(--dorado);
+  color: var(--negro);
+}
+
+.badge-grupo {
+  background: var(--rojo);
+  color: var(--blanco);
+}
+
+/* ── LISTA DE EJERCICIOS ──────────── */
+.lista-ejercicios {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ── ITEM EJERCICIO ───────────────── */
+.ejercicio-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--crema);
+  padding: 10px 12px;
+  border-radius: var(--radio-sm);
+  border: 1px solid var(--crema-dark);
+  transition: all .2s;
+}
+
+.ejercicio-item:hover {
+  background: var(--crema-dark);
+}
+
+/* info izquierda */
+.ejercicio-item > div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.ejercicio-nombre {
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.ejercicio-series {
+  font-size: .8rem;
+  color: var(--gris);
+}
+
+/* ── ACCIONES (derecha) ───────────── */
+.ejercicio-acciones {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* botón ver */
+.btn-ver {
+  font-size: .75rem;
+  padding: 6px 10px;
+  border-radius: var(--radio-sm);
+  background: var(--rojo);
+  color: var(--blanco);
+  font-weight: 600;
+  transition: .2s;
+}
+
+.btn-ver:hover {
+  background: var(--rojo-dark);
+}
+
+/* botón video (sin imágenes rotas) */
+.btn-video {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  background: var(--crema-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--negro);
+  transition: .2s;
+}
+
+.btn-video:hover {
+  transform: scale(1.1);
+  background: var(--dorado);
+}
+
+/* ── HEADER DE RUTINA (ajuste fino) ─ */
+.rutina-header {
+  background: var(--blanco);
+  border-radius: var(--radio);
+  padding: 16px;
+  box-shadow: var(--sombra-sm);
+  border-left: 6px solid var(--rojo);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rutina-header h2 {
+  text-align: center;
+  font-family: var(--font-titulo);
+  letter-spacing: 1px;
+}
+
+/* chips */
+.rutina-meta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.rutina-meta span,
+.rutina-meta time {
+  background: var(--crema);
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: .8rem;
+}
+
+/* ── RESPONSIVE ───────────────────── */
+@media (max-width: 640px) {
+  .ejercicio-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .ejercicio-acciones {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .rutina-header h2 {
+    font-size: 1.3rem;
+  }
+}
