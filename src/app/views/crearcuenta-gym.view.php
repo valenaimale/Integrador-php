@@ -30,6 +30,7 @@
                 <input type="password" id="contraseña" name="contraseña" placeholder="ej.:tucontraseña" required>
                 <label for="ccontraseña">Confirmar contraseña</label>
                 <input type="password" id="ccontraseña" name="ccontraseña" placeholder="ej.:tucontraseña" required>
+</fieldset>
             <button type="submit">Crear cuenta de gimnasio</button>
         </form>
         <div class="form-link">

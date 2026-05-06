@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>crear-cuenta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/crear-cuenta.css">
+</head>
+<body>
+    <header>
+    <img src="Logo.JPG" alt="Logo ProgresoFit">
+    <h1>ProgresoFit</h1>    
+    <nav>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/rutinas">rutinas</a></li>
+            <li><a href="/gimnasios">gimnasios</a></li>
+            <li><a href="/feed">feed</a></li>
+        </ul>
+
+        <div class="nav-acciones">
+            <a href="/crearCuenta">Registro</a>
+            <a href="/user">perfil</a>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <h2>Crear cuenta de gimnasio</h2>
+        <form action="/crearCuenta" method="post">
+            <fieldset>
+                <legend>Datos del gimnasio:</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="ej.: Maria Perez" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="ej.:tuemail@email.com" required>
+                <label for="telefono">Telefono (opcional)</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="ej.:+54 011 11111111">
+                <label for="direccion">Direccion</label>
+                <input type="text" id="direccion" name="direccion" placeholder="ej.:Calle Falsa 1234" required>
+                <label for="logo">Agregar logo</label>
+                <input type="file" id="logo" name="logo" accept="image/jpeg, image/png, image/webp">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" placeholder="ej.:tucontraseña" required>
+                <label for="ccontraseña">Confirmar contraseña</label>
+                <input type="password" id="ccontraseña" name="ccontraseña" placeholder="ej.:tucontraseña" required>
+            </fieldset>
+            <button type="submit">Crear cuenta de gimnasio</button>
+        </form>
+        <div class="form-link">
+            <p>¿Ya tienes una cuenta? <a href="inicio-sesion.html">Iniciar sesión</a></p>
+        </div>
+    </main>
+    <footer>
+            <section aria-label="Redes sociales">
+                <h2>Seguinos</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank"
+                            rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank"
+                            rel="noopener noreferrer">Twitter</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank"
+                            rel="noopener noreferrer">Facebook</a></li>
+                </ul>
+            </section>
+
+            <nav aria-label="Enlaces del sitio">
+                <h2>Paw Print</h2>
+                <ul>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="help.html">Ayuda</a></li>
+                </ul>
+            </nav>
+
+            <section>
+                <h2>Atención al cliente</h2>
+                <address>
+                    +54 9 11 5555-5555<br>
+                    <a href="mailto:atencion@pawprint.com">atencion@pawprint.com</a><br>
+                    Calle Falsa 123
+                </address>
+            </section>
+
+            <section aria-label="Información legal">
+                <img src="img/logo.png" alt="Data fiscal">
+                <p><small>© 2026 ProgresoFit. Todos los derechos reservados.</small></p>
+            </section>
+    </footer>
+
+</body>
+
+</html>
+

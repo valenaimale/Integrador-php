@@ -9,12 +9,16 @@
 <body>
     <header>
         <h1>ProgresoFit</h1>
-        <img src="/Logo.JPG">
-        <button href="/inicio-sesion">Iniciar sesion -></button>
+        <img src="/Logo.JPG" alt="">
+        <form action="/inicio-sesion" method="get">
+            <button type="submit">Inicio-sesion</button>
+        </form>
     </header>
     <main>
         <h2>ProgresoFit</h2>
-        <button href="/crear-cuenta">Crear cuenta -></button>
+        <form action="/crear-cuenta" method="get">
+            <button type="submit">Crear cuenta</button>
+        </form>
     </main>
     <?php require 'parts/footer.view.php'; ?>
 </body>
