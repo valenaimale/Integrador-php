@@ -11,7 +11,7 @@
 <body>
     <?php require 'parts/header.view.php'; ?>
     <main>
-        <form>
+        <form action="/formularioPago" method="post">
         <fieldset>
             <legend>Datos personales</legend>
             <input type="text" name="nombre" placeholder="Nombre">
