@@ -103,6 +103,9 @@ class Router {
         $this->register('GET@/pagos-suscripcion', 'PagosuscripcionController@mostrar');
 
 
+        // Gimnasios
+        $this->register('GET@/gimnasios', 'GymController@listar');
+
         // Nosotros
         $this->register('GET@/nosotros', 'NosotrosController@mostrar_nosotros');
 
