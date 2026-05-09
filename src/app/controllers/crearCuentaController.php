@@ -4,7 +4,7 @@ namespace PAW\app\controllers;
 
 use PAW\app\services\ApiClient;
 
-class crearCuentaController
+class CrearCuentaController
 {
     public string $viewsDir;
     private ApiClient $api;

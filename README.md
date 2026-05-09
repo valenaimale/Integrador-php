@@ -51,12 +51,12 @@ Esto levanta automáticamente:
 Una vez que los contenedores estén corriendo, importá el backup con el gimnasio y usuarios de prueba:
 
 ```bash
-docker exec -i progresofit-mysql \
-  mysql -u progresofit_user -pprogresofit_pass progresofit \
-  < backend/backup_progresofit.sql
+tail -n +2 backend/backup_progresofit.sql | docker exec -i progresofit-mysql mysql -u progresofit_user -pprogresofit_pass progresofit
 ```
 
-> El warning `Using a password on the command line...` es normal, no es un error.
+> **Nota:** El `tail -n +2` omite la primera línea del archivo (que puede causar errores). El warning `Using a password on the command line...` es normal, no es un error.
+
+> **Persistencia:** Los datos se guardan en un volumen Docker y **sobreviven** a `docker compose down`. Solo necesitás volver a importar el backup si hacés `docker compose down -v` (que borra los volúmenes).
 
 ### 4. Abrir la aplicación
 

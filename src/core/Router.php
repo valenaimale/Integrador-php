@@ -19,7 +19,7 @@ class Router {
     }
 
     public function call($controller, $action){
-        $controller_name = "PAW\\App\\Controllers\\{$controller}";//puede que sea \\PAW\\App\\Controllers\\{$controller}
+        $controller_name = "PAW\\app\\controllers\\{$controller}";
         $objController = new $controller_name;
         $objController->$action();
     }

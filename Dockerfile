@@ -6,11 +6,9 @@ RUN apt-get update && apt-get install -y unzip curl git \
     && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
     && rm -rf /var/lib/apt/lists/*
 
-COPY composer.json composer.lock ./
-RUN composer install --no-dev --optimize-autoloader
-
 COPY . .
 
+RUN composer install --no-dev --optimize-autoloader
 RUN mkdir -p logs && chmod 777 logs
 
 EXPOSE 8000
